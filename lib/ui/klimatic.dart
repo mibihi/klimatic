@@ -102,7 +102,8 @@ return FutureBuilder(
                   title: Text(
                   "Humidity:${content['main']['humidity'].toString()}\n"
                        "Max:${content['main']['temp_max'].toString()} F\n"
-                       "Min:${content['main']['temp_min'].toString()} F",
+                       "Min:${content['main']['temp_min'].toString()} F\n"
+                       "Cond:${content['weather'][0]['description'].toString()} ",
                     style:  extraData(),
 
                   ),
